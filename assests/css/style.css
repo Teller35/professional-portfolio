@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #39a6b2;
+    --secondary-color: #47b239;
+    --tertiary-colo: #cf1711; 
+}
+
+body {
+    color: var(--primary-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
