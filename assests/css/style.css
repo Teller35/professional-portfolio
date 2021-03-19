@@ -5,46 +5,40 @@
 }
 
 :root {
-    --primary-color: #39a6b2;
-    --secondary-color: #4ea743;
+    --primary-color: #0d464d;
+    --secondary-color: #57a54d;
     --tertiary-color: #cf1711; 
 }
 
 body {
     color: var(--secondary-color);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--primary-color);
 }
 /* header styling */
 header {
     padding: 20px 35px;
-    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    background-image: url('../images/Me\ at\ the\ zoo.JPG');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: var(--secondary-color); 
-    margin: 0;
-}
-
-header a {
+header a, footer a {
     text-decoration: none;
     color: var(--secondary-color);
 }
 
-header nav {
+h2 {
+    color: var(--tertiary-color);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+header nav, footer nav {
     margin: 7px 0;
 }
 
-header nav ul {
+header nav ul, footer nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -52,24 +46,29 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
+header nav ul li a, header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover, footer nav ul li a:hover {
     background: var(--tertiary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
 
+footer a {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 /* Intro styling */
-.intro {
+.hero {
     background-image: url('../images/Me\ at\ the\ zoo.JPG');
     background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
 }
