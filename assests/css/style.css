@@ -24,7 +24,15 @@ header {
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-header a, footer a {
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--secondary-color); 
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+header a {
     text-decoration: none;
     color: var(--secondary-color);
 }
@@ -32,13 +40,15 @@ header a, footer a {
 h2 {
     color: var(--tertiary-color);
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 30px;
+    margin: 0;
 }
 
-header nav, footer nav {
+header nav  {
     margin: 7px 0;
 }
 
-header nav ul, footer nav ul {
+header nav ul  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -53,22 +63,45 @@ header nav ul li a, header nav ul li a {
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-header nav ul li a:hover, footer nav ul li a:hover {
+header nav ul li a:hover {
     background: var(--tertiary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
 
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
 footer a {
+    line-height: 1.5;
     padding: 20px 35px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+section {
+    padding: 60px;
 }
 /* Intro styling */
 .hero {
     background-image: url('../images/Me\ at\ the\ zoo.JPG');
     background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
