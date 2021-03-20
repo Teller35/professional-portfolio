@@ -2,26 +2,27 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: rgb(163, 157, 157);
 }
 
 :root {
     --primary-color: #0d464d;
     --secondary-color: #57a54d;
-    --tertiary-color: #cf1711; 
+    --tertiary-color: #ad1d18; 
 }
 
 body {
     color: var(--secondary-color);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: var(--primary-color);
 }
 /* header styling */
-header {
+header, footer {
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 5px solid var(--tertiary-color);
 }
 
 header h1 {
@@ -42,6 +43,9 @@ h2 {
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
     font-size: 30px;
     margin: 0;
+    border: 8px solid var(--tertiary-color);
+    width: 15%;
+    text-align: center;
 }
 
 header nav  {
@@ -70,38 +74,40 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-footer {
-    background: var(--primary-color);
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-footer a {
-    line-height: 1.5;
-    padding: 20px 35px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
 section {
     padding: 60px;
 }
 /* Intro styling */
-.hero {
-    background-image: url('../images/Me\ at\ the\ zoo.JPG');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
+
+.intro, .hero {
+    border: 10px solid var(--tertiary-color);
+    padding: 50px;
+    color: var(--primary-color);
+    width: 90%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+}
+
+/* Work styling */
+.placeholder .run {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.placeholder {
+    background-image: url("../images/Me\ at\ the\ zoo.JPG");
+    background-size: 15%;
+    background-attachment: fixed;
+}
+
+.hero::after {
+    content: "";
+    display: table;
+    clear: both;
 }
