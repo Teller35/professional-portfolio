@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary-color: #0d464d;
+    --primary-color: #b15b2a;
     --secondary-color: #57a54d;
     --tertiary-color: #ad1d18; 
 }
@@ -35,7 +35,7 @@ header h1 {
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-header a {
+header a, section a {
     text-decoration: none;
     color: var(--secondary-color);
 }
@@ -136,4 +136,27 @@ section {
 }
 
 /* Work styling */
+.run {
+    font-size: 75px;
+    background-image: url("../images/RunBuddy.png");
+}
 
+.invisable {
+    opacity: 0;
+}
+
+.placeholder1 {
+    font-size: 75px;
+    background-image: url("../images/road.jpeg");
+    background-repeat: no-repeat;
+}
+
+.placeholder2 {
+    font-size: 75px;
+    background-image: url("../images/lake.jpg");
+}
+
+.placeholder3 {
+    font-size: 75px;
+    background-image: url("../images/sun.jpg");
+}
