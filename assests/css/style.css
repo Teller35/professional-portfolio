@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(163, 157, 157);
 }
 
 :root {
@@ -16,13 +15,16 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* header styling */
-header, footer {
+header {
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border: 5px solid var(--tertiary-color);
+    background-image: url('../images/Me-at-the-zoo.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -43,7 +45,6 @@ h2 {
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
     font-size: 30px;
     margin: 0;
-    border: 8px solid var(--tertiary-color);
     width: 15%;
     text-align: center;
 }
@@ -74,40 +75,65 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+footer{
+    background: var(--primary-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 45px;
+    margin: 0;
+}
+
+footer article {
+    line-height: 2;
+    text-align: center;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
 section {
     padding: 60px;
 }
 /* Intro styling */
 
-.intro, .hero {
-    border: 10px solid var(--tertiary-color);
-    padding: 50px;
-    color: var(--primary-color);
-    width: 90%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border-radius: 5px;
+.hero, .work {
+    background-image: url('../images/Me-at-the-zoo.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
+.intro-cta {
+    width: 35%;
+    text-align: center;
+    margin: 3.5%;
+    color: var(--tertiary-color);
+    font-size: 40px;
+    line-height: 2;
+    border: 8px solid var(--tertiary-color);
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    color: var(--primary-color);
+    line-height: 1.5;
+    font-size: 30px;
+}
+
 /* Work styling */
-.placeholder .run {
-  float: left;
-  width: 50%;
-  padding: 15px;
-}
 
-.placeholder {
-    background-image: url("../images/Me\ at\ the\ zoo.JPG");
-    background-size: 15%;
-    background-attachment: fixed;
-}
-
-.hero::after {
-    content: "";
-    display: table;
-    clear: both;
-}
