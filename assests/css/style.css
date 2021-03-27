@@ -24,7 +24,6 @@ header {
     background-image: url('../images/Me-at-the-zoo.JPG');
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%;
 }
 
 header h1 {
@@ -108,7 +107,6 @@ section {
     background-image: url('../images/Me-at-the-zoo.JPG');
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -136,27 +134,42 @@ section {
 }
 
 /* Work styling */
+
 .run {
     font-size: 75px;
+    height: 200px;
+    width: 800px;
     background-image: url("../images/RunBuddy.png");
+    background-size: cover;
+    border: 3px solid var(--tertiary-color);
 }
 
 .invisable {
-    opacity: 0;
+    /* opacity: 0;*/
+    text-align: center;
 }
 
-.placeholder1 {
+.robot {
     font-size: 75px;
-    background-image: url("../images/road.jpeg");
-    background-repeat: no-repeat;
+    height: 200px;
+    width: 800px;
+    background-image: url("../images/robots.jpg");
+    background-size: 800px 300px;
+    border: 3px solid var(--tertiary-color);
 }
 
 .placeholder2 {
-    font-size: 75px;
+    height: 200px;
+    width: 800px;
     background-image: url("../images/lake.jpg");
+    background-size: 800px 300px;
+    border: 3px solid var(--tertiary-color);
 }
 
 .placeholder3 {
-    font-size: 75px;
+    height: 200px;
+    width: 800px;
     background-image: url("../images/sun.jpg");
+    background-size: 800px 190px;
+    border: 3px solid var(--tertiary-color);
 }
