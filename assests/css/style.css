@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #b15b2a;
-    --secondary-color: #57a54d;
-    --tertiary-color: #ad1d18; 
+    --primary-color: #64cac2;
+    --secondary-color: #83cc7a;
+    --tertiary-color: #bd403c; 
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* header styling */
-header {
+header, footer {
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
@@ -48,11 +48,11 @@ h2 {
     text-align: center;
 }
 
-header nav  {
+header nav, footer nav  {
     margin: 7px 0;
 }
 
-header nav ul  {
+header nav ul, footer nav ul  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,26 +60,18 @@ header nav ul  {
     list-style: none;
 }
 
-header nav ul li a, header nav ul li a {
+header nav ul li a, footer nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover, footer nav ul li a:hover {
     background: var(--tertiary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
-}
-
-footer{
-    background: var(--primary-color);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 footer h2 {
@@ -88,14 +80,16 @@ footer h2 {
     margin: 0;
 }
 
-footer article {
+/* footer article {
     line-height: 2;
     text-align: center;
-}
+} */
 
 footer a {
     color: var(--secondary-color);
     text-decoration: none;
+    justify-content: space-between;
+    font-size: 40px;
 }
 
 section {
@@ -111,6 +105,8 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    text-align: center;
+    font-size: 120px;
 }
 
 .intro-cta {
@@ -134,9 +130,12 @@ section {
 }
 
 /* Work styling */
+.hero {
+    
+}
 
 .run {
-    font-size: 75px;
+    /* font-size: 75px; */
     height: 200px;
     width: 800px;
     background-image: url("../images/RunBuddy.png");
@@ -145,12 +144,11 @@ section {
 }
 
 .invisable {
-    /* opacity: 0;*/
-    text-align: center;
+    opacity: 0;
 }
 
 .robot {
-    font-size: 75px;
+    /* font-size: 75px; */
     height: 200px;
     width: 800px;
     background-image: url("../images/robots.jpg");
@@ -173,3 +171,32 @@ section {
     background-size: 800px 190px;
     border: 3px solid var(--tertiary-color);
 }
+
+/* Media Query */
+@media screen and (max-width: 980px) {
+    header, footer {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }  
+  
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+  
+    header nav ul, footer nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    header nav ul li a, footer nav ul li a {
+        font-size: 20px;
+    }
+    
+    h2 {
+        text-align: center;
+        width: 100%;
+    }
+  }
