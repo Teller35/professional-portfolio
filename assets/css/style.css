@@ -21,7 +21,7 @@ header, footer {
     justify-content: space-between;
     flex-wrap: wrap;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-image: url('../images/Me-at-the-zoo.JPG');
+    background: url('../images/Me-at-the-zoo.JPG');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -80,11 +80,6 @@ footer h2 {
     margin: 0;
 }
 
-/* footer article {
-    line-height: 2;
-    text-align: center;
-} */
-
 footer a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -98,7 +93,7 @@ section {
 /* Intro styling */
 
 .hero, .work {
-    background-image: url('../images/Me-at-the-zoo.JPG');
+    background: url('../images/Me-at-the-zoo.JPG');
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -130,9 +125,6 @@ section {
 }
 
 /* Work styling */
-.hero {
-    
-}
 
 .run {
     /* font-size: 75px; */
@@ -143,7 +135,7 @@ section {
     border: 3px solid var(--tertiary-color);
 }
 
-.invisable {
+.invisible {
     opacity: 0;
 }
 
@@ -174,10 +166,11 @@ section {
 
 /* Media Query */
 @media screen and (max-width: 980px) {
-    header, footer {
+    header, footer, .hero, .work {
         padding-bottom: 0;
         justify-content: center;
         position: relative;
+        width: 800px;
     }  
   
     header h1 {
@@ -198,5 +191,9 @@ section {
     h2 {
         text-align: center;
         width: 100%;
+    }
+
+    .run, .robot, .placeholder2, .placeholder3 {
+       width: 700px; 
     }
   }
