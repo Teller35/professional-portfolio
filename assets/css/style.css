@@ -156,11 +156,11 @@ section {
     border: 3px solid var(--tertiary-color);
 }
 
-.placeholder3 {
+.password {
     height: 200px;
     width: 800px;
-    background-image: url("../images/sun.jpg");
-    background-size: 800px 190px;
+    background-image: url("../images/password.png");
+    background-size: 780px 190px;
     border: 3px solid var(--tertiary-color);
 }
 
